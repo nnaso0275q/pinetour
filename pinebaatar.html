@@ -1,0 +1,338 @@
+DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        .location-container {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            padding: 65px 0;
+        }
+ 
+        .location {
+            width: 275px;
+            height: 370px;
+            background-size: cover;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 8px 8px rgba(41, 114, 139, 0.25),
+                -8px -8px rgba(31, 114, 170, 0.46);
+            position: relative;
+        }
+ 
+        .location-bg {
+            background-color: rgba(41, 41, 41, 0.4);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            border-radius: 40px;
+            opacity: 0;
+            transition: opasity 1s;
+ 
+        }
+ 
+        .location-en {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+ 
+        }
+ 
+        .location-text {
+            position: relative;
+            z-index: 10;
+            width: 232px;
+            color: rgba(253, 253, 254, 0.8);
+            transition: color 1s;
+            font-size: 37px;
+            font-family: "Bebas Neue";
+            text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.65);
+        }
+ 
+        .location:hover .location-bg {
+            transition: opacity 1s;
+            opacity: 1;
+        }
+ 
+        .location:hover .location-text {
+            color: white;
+        }
+ 
+ 
+        .address-container {
+            position: relative;
+        }
+ 
+ 
+ 
+ 
+ 
+        .address {
+            width: 513px;
+            height: 112px;
+            box-sizing: border-box;
+            background-color: rgba(238, 233, 217, 1);
+            border-radius: 120px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+            border: 4px solid transparent;
+            margin-left: 120px;
+ 
+        }
+ 
+        .address:hover {
+            border: 4px solid white;
+        }
+ 
+ 
+ 
+        .address-city {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+ 
+        .address-city::before {
+            content: "";
+            display: block;
+            width: 14px;
+            height: 14px;
+            background-image: url(1pin.png);
+            background-size: contain;
+        }
+ 
+ 
+        .address-day {
+            width: 52px;
+            height: 52px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .address-image {
+            width: 245px;
+            height: 245px;
+            border-radius: 50%;
+            display: flex;
+            border-radius: 50%;
+            background-image: url(city1.png);
+            background-size: cover;
+            position: absolute;
+            display: none;
+        }
+ 
+        .address:hover .address-image {
+            display: block;
+        }
+ 
+        .hairtsag1 {
+            width: 384px;
+            height: 527px;
+            border-radius: 40px;
+            background-color: white;
+            padding-left: 24px;
+            margin-top: 50px;
+ 
+        }
+    </style>
+</head>
+ 
+<body style="margin: 0;">
+    <div
+        style="background-image: url('HeroImage\ \(2\).png'); width: 1440px; height: 773px; background-repeat: no-repeat; background-size: cover;">
+ 
+ 
+        <div
+            style=" width: 1204px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between;">
+            <img src="logo 1 (1).png" />
+            <div style="display: flex; align-items: center; gap: 50px; font-family: 'Inter';">
+                <a style="color: white;">Home</a>
+                <a style="color: white;">About</a>
+                <a style="color: white;">Contact</a>
+                <img src="user.png">
+            </div>
+ 
+            <div class="location-en" style="background-color: white;">EN</div>
+        </div>
+        <div style="text-align: center; padding: 169px 210px 411.5px;">
+            <div
+                style="font-size: 80px; background-color: transparent; border: 0; color:#E8EDF2B8 ; margin: 0 auto; text-align: center;">
+                PURE MAGIC</div>
+            <div style="font-size: 250px; border: 2px; color: #fdfdfe;">AWAITS</div>
+            <div style="font-size: 64px; border: 4px; color: #FFFFFF;">2024</div>
+ 
+ 
+        </div>
+    </div>
+    </div>
+ 
+    <div
+        style="background-image: url(div2.png); width: 1440px; height: 500px; background-repeat: no-repeat; background-size: cover;">
+        <div class="location-container">
+            <div class="location" style="background-image: url(location1.png);">
+                <div class="location-text">Terkhiin tsagaan lake</div>
+                <div class="location-bg"></div>
+            </div>
+            <div class="location" style="background-image: url(Location2.png);">
+                <div class="location-text">Amarbayasgalant monastery</div>
+                <div class="location-bg"></div>
+            </div>
+            <div class="location" style="background-image: url(Location3.png);">
+                <div class="location-text">Khuvgul lake</div>
+                <div class="location-bg"></div>
+            </div>
+            <div class="location" style="background-image: url(location4.png);">
+                <div class="location-text"> Khorgiin togoo</div>
+                <div class="location-bg"></div>
+            </div>
+        </div>
+        <div
+            style="background-image: url(Roadmap\ image\ \(1\).png); width: 1440px; height: 1022px; background-repeat: no-repeat; background-size: cover;">
+            <div style="text-align: center; padding-top: 120px; gap: 10px;">
+                <div
+                    style="font-size: 42px; font-weight: 500; background-color: transparent; border: 0; color: black; margin: 0 auto; text-align: center">
+                    Destination of Our Agency</div>
+                <div style="font-size: 20px;color: rgba(24, 24, 27, 0.7);">Pack your bags and get ready
+                </div>
+                <div style="margin-top: 72px;"></div>
+                <div class="address-container">
+                    <div class="address">
+                        <div class="address-text">
+                            <div>
+                                <div class="address-location">Sukhbaatar square</div>
+                                <div class="address-city">Ulaanbator</div>
+                            </div>
+                        </div>
+                        <div class="address-day">DAY 1</div>
+ 
+                        <div class="address-image" style="
+                                   top: 125px;
+                                   right: 143px;
+                                   background-image: url(city1.png);"></div>
+                    </div>
+ 
+                    <div class="address" style="background-color: rgba(139, 184, 193, 0.8);">
+                        <div class="address-text">
+                            <div class="address-location">Amarbayasgalant monastery</div>
+                            <div class="address-city">Bulgan</div>
+                        </div>
+                        <div class="address-day">DAY 2</div>
+                        <div class="address-image" style="top: 20px;
+                                    right: 380px;
+                                    background-image: url(city2.png);"></div>
+                    </div>
+ 
+                    <div class="address" style="background-color: rgba(170, 216, 215, 0.8);">
+                        <div class="address-text">
+                            <div class="address-location">Khorgiin togoo</div>
+                            <div class="address-city">Arkhangai</div>
+                        </div>
+                        <div class="address-day">DAY 3</div>
+                        <div class="address-image" style="top: 200px;
+                                    right: 500px;
+                                    background-image: url(city3.png);"></div>
+                    </div>
+ 
+                    <div class="address" style="background-color: rgba(139, 192, 189, 0.8);">
+                        <div class="address-text">
+                            <div class="address-location">Terkhiin tsagaan lake</div>
+                            <div class="address-city">Arkhangai</div>
+                        </div>
+                        <div class="address-day">DAY 4</div>
+                        <div class="address-image" style="top: -10px;
+                                    right: 550px;
+                                    background-image: url(city4.png);"></div>
+                    </div>
+ 
+                    <div class="address" style="background-color: rgba(115, 204, 224, 0.8);">
+                        <div class="address-text">
+                            <div class="address-location">Khuvsgul</div>
+                            <div class="address-city">Khuvsgul</div>
+                        </div>
+                        <div class="address-day">DAY 5</div>
+                        <div class="address-image" style="top: -5px;
+                                    right: 350px;
+                                    background-image: url(city5.png);"></div>
+                    </div>
+ 
+                </div>
+ 
+            </div>
+        </div>
+        <div
+            style="background-image: url(Price&Footer\ image.png); width: 1440px; height: 1120px; background-repeat: no-repeat; background-size: cover;">
+            <div style="text-align: center; padding-top: 40px; gap: 10px;">
+                <div style="font-size: 42px;
+                            font-weight: 600;
+                            background-color: transparent;
+                            border: 0;
+                            color: black;
+                            margin: 0 auto;
+                            text-align: center; ">Pricing of Our Agency</div>
+                <div style="font-size: 20px; color: rgba(24, 24, 27, 0.7);">Choose A Package That's Right For you</div>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 50px;">
+                <div style="display: flex; justify-content: center; margin-top: 0px; gap: 24px;">
+                    <div class="hairtsag1">
+ 
+                        <div style="display: flex; align-items: center; padding-top: 32px;">
+                            <div><img style="height: 36px; width: 36px; padding-right: 24px;" src="zurh.png" alt="">
+                            </div>
+                            <div style="padding-left: 16px; font-size: 18px;">Budget Package</div>
+                        </div>
+                        <div style="margin-top: 45px;">
+                            <div style="font-size: 40px; color: rgba(48, 48, 48, 1);"> 500$</div>
+                            <div style="font-size: 16px; color: rgba(145, 145, 145, 1);">Essentials Covered</div>
+                        </div>
+                        
+                    </div>
+                </div>
+ 
+                <div class="hairtsag1">
+ 
+                    <div style="display: flex;align-items: center; padding-top: 32px;">
+                        <div><img style="height: 36px; width: 36px; padding-right: 24px;" src="zurh.png" alt=""></div>
+                        <div style="padding-left: 16px; font-size: 18px;">Standard Package</div>
+                    </div>
+                </div>
+                <div class="hairtsag1">
+ 
+                    <div style="display: flex;align-items: center; padding-top: 32px;">
+                        <div><img style="height: 36px; width: 36px; padding-right: 24px;" src="zurh.png" alt=""></div>
+                        <div style="padding-left: 16px; font-size: 18px;">Luxury Package</div>
+                    </div>
+                </div>
+ 
+            </div>
+        </div>
+    </div>
+    </div>
+ 
+    </div>
+    </div>
+</body>
+ 
+</html>
+ 
